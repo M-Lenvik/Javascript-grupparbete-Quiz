@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta description=" Denna quiz är en del av Vera, Marie, Ridwaan och Davids grupparbete. Här kommer besökarna få svara på frågor inom kategorin film."/>
+    <meta name="description" content="Denna quiz är en del av Vera, Marie, Ridwaan och Davids grupparbete. Här kommer besökarna få svara på frågor inom kategorin film."/>
+    <meta name="keywords" content="quiz, filmquiz, film"/>
+    <meta name="author" content="Blå Kongo Team" />
     <title>Blå Kongo quiz</title>
   </head>
   <body>
@@ -14,20 +16,20 @@
     </header>
     <main>
 
-      <section class="frågor">
-
-
+      <section id="quiz-section">
+        <!-- Frågorna laddas här -->
       </section>
+      <div class="button-container">
 
-
+      <button id="next-question" class="hidden">Nästa fråga</button>
 
     </main>
 
     <footer>
-
+      <div class="pict_1"><img src="pictures/movie.png" width="96" height="96" loading="lazy" alt="movie_clapper"></div>
+      <div class="pict_2"><img src="pictures/movie.png" width="96" height="96" loading="lazy" alt="movie_clapper"></div>
     </footer>
- 
-    <div id="app"></div>
+
+
     <script type="module" src="/src/main.ts"></script>
   </body>
-</html>
