@@ -1,3 +1,93 @@
+body {
+  margin: 0;
+  display: block;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #317899;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: black;
+}
+
+p{
+  color: black;
+}
+
+
+header{
+  border: gray solid 2px;
+  width: 90%;
+
+  h1{
+    text-align: center;
+  }
+}
+
+main{
+  border: gray solid 2px;
+  width: 90%;
+  padding-bottom: 3%;
+
+
+  .frågor{
+    height: 300px; //satte ett fast mått för att testa med
+    border: gray solid 2px;
+    border-radius: 20px;
+    background-color: #7cb7c5;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    padding-bottom: 2%;
+    
+    h2{
+      color: black;
+      text-align: center;
+    }
+
+    .alternativ_1, .alternativ_2, .alternativ_3{
+      border: black solid 2px;
+      width: 50%;
+      margin-left: 25%;
+      border-radius: 20px;
+      margin-top: 2%;
+
+      p{
+        font-size: 1em;
+        text-align: center;
+      }
+    }
+
+    .rätt_svar{
+      background-color: rgb(16, 83, 16);
+    }
+
+    .fel_svar{
+      background-color: rgb(156, 23, 23);
+    }
+  }
+
+  .nästa_fråga{
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 2%;
+    border-radius: 20px;
+  }
+}
+
+
+footer{
+  width: 80%;
+  border: grey solid 2px;
+
+}
+
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,20 +112,8 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 #app {
+  border: solid black 2px;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -43,7 +121,7 @@ h1 {
 }
 
 .logo {
-  height: 6em;
+  height: 2em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -56,7 +134,7 @@ h1 {
 }
 
 .card {
-  padding: 2em;
+  padding: 1em;
 }
 
 .read-the-docs {
