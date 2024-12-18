@@ -1,3 +1,7 @@
+@function rem($size) {
+  @return calc($size / 16) * 1rem;
+}
+
 body {
   margin: 0;
   display: block;
@@ -8,86 +12,132 @@ body {
   background-color: #317899;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  color: black;
-}
-
-p{
-  color: black;
-}
-
-
 header{
   border: gray solid 2px;
   width: 90%;
 
   h1{
     text-align: center;
+    font-size: 2em;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  p{
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 5px;
   }
 }
 
 main{
   border: gray solid 2px;
   width: 90%;
-  padding-bottom: 3%;
+  padding-bottom: 10px;
 
 
-  .frågor{
+  .questions{
     height: 300px; //satte ett fast mått för att testa med
     border: gray solid 2px;
     border-radius: 20px;
     background-color: #7cb7c5;
     width: 90%;
     margin-left: 5%;
-    margin-top: 3%;
-    padding-bottom: 2%;
-    
-    h2{
-      color: black;
+    margin-top: 15px;
+
+    .question{
+      height: 25%;
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 20px;
       text-align: center;
     }
 
-    .alternativ_1, .alternativ_2, .alternativ_3{
-      border: black solid 2px;
-      width: 50%;
-      margin-left: 25%;
-      border-radius: 20px;
-      margin-top: 2%;
+    .answers{
+      height: 75%;
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
 
-      p{
-        font-size: 1em;
-        text-align: center;
+      .alt_1, .alt_2, .alt_3{
+        border: solid rgb(62, 62, 62) 2px;
+        width: 50%;
+
+        p{
+          font-size: 1em;
+        }
       }
     }
 
-    .rätt_svar{
+    .correct_answer{
       background-color: rgb(16, 83, 16);
     }
 
-    .fel_svar{
+    .wrong_answer{
       background-color: rgb(156, 23, 23);
     }
   }
 
-  .nästa_fråga{
-    width: 20%;
-    margin-left: 40%;
-    margin-top: 2%;
+  button {
+    width: 30%;
+    background-color: #d3d3d3;
     border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #c0c0c0; /* Mörkare grå på hover */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Förstärkt skugga */
+    transform: translateY(-2px); /* Lyft knappen lite */
+  }
+
+  .next_question{
+    margin-left: 35%;
+    margin-top: 10px;
+    border: solid rgb(62, 62, 62) 2px;
   }
 }
 
 
 footer{
-  width: 80%;
+  width: 90%;
+  height: 120px;
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: grey solid 2px;
 
+  .pict_1{
+    width: auto;
+    height: 40px;
+    transform: rotate(-15deg);
+  }
+
+  .pict_2{
+    width: auto;
+    height: 40px;
+    transform: rotate(15deg);
+  }
 }
 
+p{
+  color: black;
+}
 
-
+/*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -172,3 +222,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+*/
