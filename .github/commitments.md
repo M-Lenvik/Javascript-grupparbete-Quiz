@@ -69,3 +69,5 @@ Hur vill du bli bemött? Hur vill du bemöta andra?
 Hurdant är ditt förhållningssätt till konflikter? Undvika, knyta näven i fickan eller explodera?
 
 Låta alla få ta del av projektet, alla ska känna sig delaktiga.
+
+@DavidBrunni sign.
