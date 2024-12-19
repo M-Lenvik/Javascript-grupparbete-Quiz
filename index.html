@@ -1,19 +1,34 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <meta name="description" content="Denna quiz är en del av Vera, Marie, Ridwaan och Davids grupparbete. Här kommer besökarna få svara på frågor inom kategorin film."/>
+    <meta name="keywords" content="quiz, filmquiz, film"/>
+    <meta name="author" content="Blå Kongo Team" />
+    <title>Blå Kongo quiz</title>
   </head>
   <body>
-    <h1>Hej gruppen!</h1>
 
-    <p>Marie gör p från VS</p>
+    <header>
+      <h1>Blå kongos film quiz</h1>
+      <p>Hejsan och välkommen till våran quiz! Här får du testa dina kunskaper inom film, lycka till! </p>
+    </header>
+    <main>
 
-    <p>David som ändrar</p>
+      <section id="quiz-section">
+        <!-- Frågorna laddas här -->
+      </section>
+      <div class="button-container">
 
-    <div id="app"></div>
+      <button id="next-question" class="hidden">Nästa fråga</button>
+
+    </main>
+
+    <footer>
+      <div class="pict_1"><img src="pictures/movie.png" width="96" height="96" loading="lazy" alt="movie_clapper"></div>
+      <div class="pict_2"><img src="pictures/movie.png" width="96" height="96" loading="lazy" alt="movie_clapper"></div>
+    </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
-</html>
