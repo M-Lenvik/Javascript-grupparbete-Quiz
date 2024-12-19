@@ -1,3 +1,6 @@
+### Wireframe 16/12/2024 ?
+![Skärmbild 2024-12-19 193236](https://github.com/user-attachments/assets/9cd8483c-7804-4f82-974b-c8b9920786a2)
+
 ### Sprintplanering 17/12/2024
 
 <img width="1792" alt="Sprint planning 17 dec" src="/src/assets/sprintplanning1.png">
@@ -8,5 +11,3 @@
 
 ![image](https://github.com/user-attachments/assets/f80f9809-2e16-411b-9ca7-aea098d255c9)
 
-### Wireframe 16/12/2024 ?
-![Skärmbild 2024-12-19 193236](https://github.com/user-attachments/assets/9cd8483c-7804-4f82-974b-c8b9920786a2)
