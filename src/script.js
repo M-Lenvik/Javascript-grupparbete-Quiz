@@ -35,7 +35,6 @@ function starttimer(){
     
     timer.innerHTML =` min:${_min} sec:${_sec}`;
     if (_min == 1 && _sec == 20){ //sätt if satsen till om man är klar med quizzen så stannar den då. just nu är den laggd på att stanna efter 1 min 20 sec
-        console.log(_min, _sec);
         return;
     }
     var t = setTimeout(starttimer, 500); //timeout för att updatera funktionen så den fortsätter räkna
