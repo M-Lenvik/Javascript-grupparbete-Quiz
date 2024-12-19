@@ -71,4 +71,8 @@ Hurdant är ditt förhållningssätt till konflikter? Undvika, knyta näven i fi
 Låta alla få ta del av projektet, alla ska känna sig delaktiga.
 
 
+
 @M-Lenvik sign
+
+@RidwaanM
+
