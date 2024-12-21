@@ -10,9 +10,9 @@ export default [
     languageOptions: { globals: globals.browser },
     rules: {
       camelcase: "error",
-      'comma-dangle': ['error', 'always-multiline'], // Enforce trailing commas in multiline
-      'curly': ['error', 'all'], // Require curly braces for all control statements
-      'no-console': 'warn', // Warn about console.log usage
+      "comma-dangle": ["error", "always-multiline"], // Enforce trailing commas in multiline
+      "curly": ["error", "all"], // Require curly braces for all control statements
+      "no-console": "warn", // Warn about console.log usage
     },
   },
   pluginJs.configs.recommended,
