@@ -13,11 +13,11 @@ body {
   background-color: #317899;
 }
 
-header{
+header {
   border: gray solid 2px;
   width: 90%;
 
-  h1{
+  h1 {
     text-align: center;
     font-size: 2em;
     color: black;
@@ -25,21 +25,25 @@ header{
     margin-bottom: 10px;
   }
 
-  p{
+  p {
     text-align: center;
     font-size: 1em;
     margin-bottom: 5px;
   }
 }
 
-main{
+main {
   border: gray solid 2px;
   width: 90%;
   padding-bottom: 10px;
 
 
+
+  .questions {
+
   .questions{
     background-color: yellow;
+
     height: 300px; //satte ett fast mått för att testa med
     border: gray solid 2px;
     border-radius: 20px;
@@ -48,12 +52,38 @@ main{
     margin-left: 5%;
     margin-top: 15px;
 
+
+    .question {
+
     .question{
       background-color: #c0c0c0;
+
       height: 25%;
       width: 90%;
       margin: 0 auto;
       padding-top: 20px;
+
+      text-align: center;
+    }
+
+    .answers {
+      height: 75%;
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .alt_1, .alt_2, .alt_3 {
+        border: solid rgb(62, 62, 62) 2px;
+        width: 50%;
+
+        p {
+
       text-align: left;
 
       .answer{
@@ -91,16 +121,17 @@ main{
         }
         
         p{
+
           font-size: 1em;
         }
       }
     }
 
-    .correct_answer{
+    .correct_answer {
       background-color: rgb(16, 83, 16);
     }
 
-    .wrong_answer{
+    .wrong_answer {
       background-color: rgb(156, 23, 23);
     }
   }
@@ -122,11 +153,18 @@ main{
     transform: translateY(-2px); /* Lyft knappen lite */
   }
 
+  .next_question {
+    margin-left: 35%;
+    margin-top: 10px;
+    border: solid rgb(62, 62, 62) 2px;
+  }
+
+
 
 }
 
 
-footer{
+footer {
   width: 90%;
   height: 120px;
   padding-bottom: 50px;
@@ -136,20 +174,20 @@ footer{
   align-items: center;
   border: grey solid 2px;
 
-  .pict_1{
+  .pict_1 {
     width: auto;
     height: 40px;
     transform: rotate(-15deg);
   }
 
-  .pict_2{
+  .pict_2 {
     width: auto;
     height: 40px;
     transform: rotate(15deg);
   }
 }
 
-p{
+p {
   color: black;
 }
 
