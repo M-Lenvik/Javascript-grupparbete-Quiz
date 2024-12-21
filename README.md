@@ -11,3 +11,7 @@
 
 ![image](https://github.com/user-attachments/assets/f80f9809-2e16-411b-9ca7-aea098d255c9)
 
+### Sprintplanering 20/12/2024
+
+![Skärmbild 2024-12-21 104909](https://github.com/user-attachments/assets/7d7dfbe3-43ff-40d6-89a8-3147c55bc2f2)
+
