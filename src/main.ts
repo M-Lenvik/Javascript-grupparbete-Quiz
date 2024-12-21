@@ -1,37 +1,15 @@
-
-import "./_normalize.scss";
-import "./style.scss";
-
-
 import './normalize.scss'
 import './style.scss'
+import { quizQuestions } from './quizQuestions'; 
 
-
-interface Question {
-    question: string
-    options: string[]
-    correctAnswer: string
+function startQuiz() {
+  quizQuestions.forEach((q) => {
+    console.log(`Q: ${q.question}`);
+    console.log(`A: ${q.answer}`);
+  });
 }
 
-const quizQuestions: Question[] = [
-    {
-        question:
-            "Vilken svensk regissör är känd för filmer som 'Fanny och Alexander' och 'Det sjunde inseglet'?",
-        options: [
-            'A) Ingmar Bergman',
-            'B) Roy Andersson',
-            'C) Lasse Hallström',
-        ],
-        correctAnswer: 'A) Ingmar Bergman',
-    },
-    {
-        question:
-            'Vilken animerad film innehåller en talande åsna som görs av Eddie Murphy?',
-        options: ['A) Shrek', 'B) Kung Fu Panda', 'C) Madagaskar'],
-        correctAnswer: 'A) Shrek',
-    },
-]
-
+startQuiz();
 
 
 const questionDiv = document.querySelector('#question') as HTMLElement;
