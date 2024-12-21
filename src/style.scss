@@ -39,6 +39,7 @@ main{
 
 
   .questions{
+    background-color: yellow;
     height: 300px; //satte ett fast mått för att testa med
     border: gray solid 2px;
     border-radius: 20px;
@@ -48,29 +49,47 @@ main{
     margin-top: 15px;
 
     .question{
+      background-color: #c0c0c0;
       height: 25%;
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
       padding-top: 20px;
-      text-align: center;
-    }
+      text-align: left;
 
-    .answers{
-      height: 75%;
-      width: 80%;
-      margin: 0 auto;
-      padding-top: 10px;
-      padding-bottom: 20px;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      .answer{
+        background-color: grey;
+        height: 75%;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 
-      .alt_1, .alt_2, .alt_3{
-        border: solid rgb(62, 62, 62) 2px;
-        width: 50%;
 
+        ul {
+          background-color: whitesmoke;
+          margin: 0;
+          padding: 0;
+
+          li{
+            list-style: none;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+        .next_question{
+          width: 100%;
+          margin-left: 0;
+          margin-top: 10px;
+          border: solid rgb(62, 62, 62) 2px;
+        }
+        
         p{
           font-size: 1em;
         }
@@ -103,11 +122,7 @@ main{
     transform: translateY(-2px); /* Lyft knappen lite */
   }
 
-  .next_question{
-    margin-left: 35%;
-    margin-top: 10px;
-    border: solid rgb(62, 62, 62) 2px;
-  }
+
 }
 
 
