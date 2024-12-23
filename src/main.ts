@@ -172,22 +172,3 @@ function newtimer(){ //sätter tiderna till 0 varje gång man callar på funktio
     
 } 
 newtimer();
-
-
-/*
-function timerstart(){
-
-
-  setTimeout(() => {
-    time.counter++;
-        time.minute = Math.floor(time.counter / 60);
-        time.seconds = Math.floor(time.counter % 60);
-  }, 1000);
-
-}
-function timerreset(){
-  time.counter = 0;
-  time.seconds = 0;
-  time.minute = 0;
-}
-*/
