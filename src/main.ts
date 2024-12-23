@@ -2,6 +2,9 @@ import './_normalize.scss';
 import './style.scss';
 import quizQuestions from "../data/quizQuestions";
 
+
+
+
 // Hitta elementet där frågorna ska visas
 const questionDiv = document.querySelector('#question') as HTMLElement;
 let currentQuestionIndex = 0;
@@ -75,7 +78,8 @@ function checkAnswer() {
   if (currentQuestionIndex < quizQuestions.length) {
     showQuestion();
   } else {
-    alert(`Quizet är klart! Du fick ${score} av ${quizQuestions.length} rätt.`);
+    
+    alert(`Quizet är klart! Du fick ${score} av ${quizQuestions.length} rätt. Det tog ${time.minute} Minuter och ${time.seconds} sekunder!`);
     showRestartButton(); // Visa "Gör om quizet"-knappen när quizet är klart
   }
 }
@@ -96,6 +100,7 @@ function showRestartButton() {
 function restartQuiz() {
   currentQuestionIndex = 0;
   score = 0;
+  newtimer();
   shuffleQuestions(); 
   showQuestion();
   const restartButtonContainer = document.getElementById('restart-container');
@@ -106,3 +111,83 @@ function restartQuiz() {
 
 shuffleQuestions();
 showQuestion();
+
+
+//------------------------------------
+//------------------------------------
+//-----------------TIMER--------------
+//------------------------------------
+//------------------------------------
+
+
+const timerdiv = document.querySelector("#timer") as HTMLElement;
+class timerVar{ 
+    constructor(
+        
+        public seconds: number,
+        public counter: number,
+        public minute: number
+    ){
+        this.seconds = seconds;
+        this.counter = counter;
+        this.minute = minute;
+        
+        
+    }
+
+}
+let time = new timerVar(0,0,0);
+function newtimer(){ //sätter tiderna till 0 varje gång man callar på funktionen för att återställa siffrorna
+    time.counter = 0;
+    time.seconds = 0;
+    time.minute = 0;
+    
+    const startcount = setInterval(() => { 
+        time.counter++;
+        time.minute = Math.floor(time.counter / 60);
+        time.seconds = Math.floor(time.counter % 60);
+
+        if(time.minute < 10 && time.seconds < 10){//Utskrift med 0 om sekunder/minuter är mindre än 10
+            timerdiv.innerHTML = `0${time.minute}:0${time.seconds}`;
+        }
+        else if (time.minute < 10 && time.seconds >= 10){
+          timerdiv.innerHTML = `0${time.minute}:${time.seconds}`;
+        }
+        else if (time.seconds < 10){
+            timerdiv.innerHTML = `${time.minute}0${time.seconds}`;
+        }
+        else{
+            timerdiv.innerHTML = `${time.minute}:${time.seconds}`; 
+        }
+        console.log(time.minute, time.seconds);
+        if (currentQuestionIndex >= quizQuestions.length){
+          clearInterval(startcount);
+        }
+        
+        
+        
+        
+    }, 1000);//Använd clearInterval(startcount) när du vill stanna timern, man callar funktionen som vanligt
+
+    
+} 
+newtimer();
+
+
+/*
+function timerstart(){
+
+
+  setTimeout(() => {
+    time.counter++;
+        time.minute = Math.floor(time.counter / 60);
+        time.seconds = Math.floor(time.counter % 60);
+  }, 1000);
+
+}
+function timerreset(){
+  time.counter = 0;
+  time.seconds = 0;
+  time.minute = 0;
+}
+*/
