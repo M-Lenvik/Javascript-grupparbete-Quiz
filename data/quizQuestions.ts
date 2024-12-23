@@ -4,7 +4,7 @@ interface Question {
     correctAnswer: string;
 }
 
-const quizQuestions: Question[] = [
+export const quizQuestions: Question[] = [
     {
         question: "Vilken svensk regissör är känd för filmer som 'Fanny och Alexander' och 'Det sjunde inseglet'?",
         options: [

@@ -32,6 +32,7 @@ main {
   padding-bottom: 10px;
 }
 main .questions {
+  background-color: yellow;
   height: 300px;
   border: gray solid 2px;
   border-radius: 20px;
@@ -40,14 +41,15 @@ main .questions {
   margin-left: 5%;
   margin-top: 15px;
 }
-main .questions .question {
+main .question {
+  background-color: #c0c0c0;
   height: 25%;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding-top: 20px;
   text-align: center;
 }
-main .questions .answers {
+main .answers {
   height: 75%;
   width: 80%;
   margin: 0 auto;
@@ -59,17 +61,50 @@ main .questions .answers {
   justify-content: space-between;
   align-items: center;
 }
-main .questions .answers .alt_1, main .questions .answers .alt_2, main .questions .answers .alt_3 {
+main .answers .alt_1, main .answers .alt_2, main .answers .alt_3 {
   border: solid rgb(62, 62, 62) 2px;
   width: 50%;
 }
-main .questions .answers .alt_1 p, main .questions .answers .alt_2 p, main .questions .answers .alt_3 p {
+main .answers .alt_1 p, main .answers .alt_2 p, main .answers .alt_3 p {
+  text-align: left;
+}
+main .answers .alt_1 p .answer, main .answers .alt_2 p .answer, main .answers .alt_3 p .answer {
+  background-color: grey;
+  height: 75%;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .answers .alt_1 p .answer ul, main .answers .alt_2 p .answer ul, main .answers .alt_3 p .answer ul {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+main .answers .alt_1 p .answer ul li, main .answers .alt_2 p .answer ul li, main .answers .alt_3 p .answer ul li {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+main .answers .alt_1 p .answer .next_question, main .answers .alt_2 p .answer .next_question, main .answers .alt_3 p .answer .next_question {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
+  border: solid rgb(62, 62, 62) 2px;
+}
+main .answers .alt_1 p .answer p, main .answers .alt_2 p .answer p, main .answers .alt_3 p .answer p {
   font-size: 1em;
 }
-main .questions .correct_answer {
+main .answers .alt_1 .correct_answer, main .answers .alt_2 .correct_answer, main .answers .alt_3 .correct_answer {
   background-color: rgb(16, 83, 16);
 }
-main .questions .wrong_answer {
+main .answers .alt_1 .wrong_answer, main .answers .alt_2 .wrong_answer, main .answers .alt_3 .wrong_answer {
   background-color: rgb(156, 23, 23);
 }
 main button {

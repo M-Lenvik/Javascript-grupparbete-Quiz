@@ -21,4 +21,5 @@
     "noUncheckedSideEffectImports": true
   },
   "include": ["src", "data/quizQuestions.ts"]
+
 }

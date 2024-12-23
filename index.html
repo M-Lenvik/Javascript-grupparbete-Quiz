@@ -1,75 +1,46 @@
 <!doctype html>
 <html lang="sv">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Denna quiz är en del av Vera, Marie, Ridwaan och Davids grupparbete. Här kommer besökarna få svara på frågor inom kategorin film."
-        />
-        <meta name="keywords" content="quiz, filmquiz, film" />
-        <meta name="author" content="Blå Kongo Team" />
-        <title>Blå Kongo quiz</title>
-    </head>
-    <body>
-        <header>
-            <h1>Blå kongos film quiz</h1>
-            <p>
-                Hejsan och välkommen till våran quiz! Här får du testa dina
-                kunskaper inom film, lycka till!
-            </p>
-        </header>
-        <main>
-            <div id="timer"></div>
-            <section class="questions">
-                <div id="question">
-                    
-                </div>
-                <!--    <div class="answers" id="answers">
-          <!- -Svarsalternativen antar jag görs i js, 
-          bara för att det ska visas ngt finns de här.
-          Dessa kan tas bort sen:- ->
-          <button class="alt_1"><p>svar 1</p></button>
-          <button class="alt_2"><p>svar 2</p></button>
-          <button class="alt_3"><p>svar 3</p></button>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Denna quiz är en del av Vera, Marie, Ridwaan och Davids grupparbete. Här kommer besökarna få svara på frågor inom kategorin film." />
+    <meta name="keywords" content="quiz, filmquiz, film" />
+    <meta name="author" content="Blå Kongo Team" />
+    <title>Blå Kongo quiz</title>
+  </head>
+  <body>
+    <header>
+      <h1>Blå kongos film quiz</h1>
+      <p>Hejsan och välkommen till vår quiz! Här får du testa dina kunskaper inom film, lycka till!</p>
+    </header>
+
+    <main>
+      <div id="timer"></div>
+
+      <section class="questions">
+        <div id="question">
+          <!-- Frågorna kommer att laddas här från TypeScript -->
         </div>
-    -->
-            </section>
-
-
-
-            <!--
-      <section id="quiz-section">
-       Frågorna laddas här 
       </section>
-      <div class="button-container">
 
-      <button id="next-question" class="hidden">Nästa fråga</button> -->
-        </main>
+      <div id="restart-container"></div>
 
-        <footer>
-            <div class="pict_1">
-                <img
-                    src="pictures/movie.png"
-                    width="96"
-                    height="96"
-                    loading="lazy"
-                    alt="movie_clapper"
-                />
-            </div>
-            <div class="pict_2">
-                <img
-                    src="pictures/movie.png"
-                    width="96"
-                    height="96"
-                    loading="lazy"
-                    alt="movie_clapper"
-                />
-            </div>
-        </footer>
+   
 
-        <script type="module" src="/src/main.ts"></script>
-        <script type="module" src="./src/script.js"></script>
-    </body>
+    </main>
+
+    <footer>
+      <div class="pict_1">
+        <img src="pictures/movie.png" width="96" height="96" loading="lazy" alt="movie_clapper" />
+      </div>
+      <div class="pict_2">
+        <img src="pictures/movie.png" width="96" height="96" loading="lazy" alt="movie_clapper" />
+      </div>
+    </footer>
+
+    <!-- Din TypeScript-fil som kompileras till JavaScript via Vite -->
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="./src/script.js"></script>
+  </body>
 </html>

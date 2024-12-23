@@ -39,7 +39,7 @@ main {
 
 
 
-  .questions {
+
 
   .questions{
     background-color: yellow;
@@ -51,9 +51,7 @@ main {
     width: 90%;
     margin-left: 5%;
     margin-top: 15px;
-
-
-    .question {
+  }
 
     .question{
       background-color: #c0c0c0;
@@ -135,7 +133,7 @@ main {
       background-color: rgb(156, 23, 23);
     }
   }
-
+}
   button {
     width: 30%;
     background-color: #d3d3d3;
