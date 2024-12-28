@@ -133,7 +133,7 @@ function showResultSlide() {
 function restartQuiz() {
   currentQuestionIndex = 0;
   score = 0;
-  timerstart();
+  timerStart();
   shuffleQuestions();
   questionDiv.style.display = 'block'; // Visa frågorna igen
   resultDiv.style.display = 'none'; // Dölj resultatet
@@ -156,7 +156,7 @@ let second: number;
 let counter: number;
 let minute: number;
 
-function timerstart(){ //sätter tiderna till 0 varje gång man callar på funktionen för att återställa siffrorna
+function timerStart(){ //sätter tiderna till 0 varje gång man callar på funktionen för att återställa siffrorna
     counter = 0;
     second = 0;
     minute = 0;
@@ -177,4 +177,4 @@ function timer(){
     clearInterval(startcount);
   }
 }
-timerstart();
+timerStart();
