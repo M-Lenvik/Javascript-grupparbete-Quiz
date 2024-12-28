@@ -42,8 +42,6 @@ main {
 
 
   .questions{
-    background-color: yellow;
-
     height: 300px; //satte ett fast mått för att testa med
     border: gray solid 2px;
     border-radius: 20px;
@@ -54,17 +52,14 @@ main {
   }
 
     .question{
-      background-color: #c0c0c0;
-
       height: 25%;
-      width: 90%;
+      width: 80%;
       margin: 0 auto;
       padding-top: 20px;
-
       text-align: center;
     }
 
-    .answers {
+    .answer {
       height: 75%;
       width: 80%;
       margin: 0 auto;
@@ -76,16 +71,8 @@ main {
       justify-content: space-between;
       align-items: center;
 
-      .alt_1, .alt_2, .alt_3 {
-        border: solid rgb(62, 62, 62) 2px;
-        width: 50%;
 
-        p {
-
-      text-align: left;
-
-      .answer{
-        background-color: grey;
+      .quiz_form{
         height: 75%;
         width: 90%;
         margin: 0 auto;
@@ -99,7 +86,6 @@ main {
 
 
         ul {
-          background-color: whitesmoke;
           margin: 0;
           padding: 0;
 
@@ -109,6 +95,18 @@ main {
             margin: 0;
             padding: 0;
           }
+        }
+
+        .user-correct-answer {
+          background-color: rgb(29, 98, 29);
+          padding: 4px;
+          display: none;
+        }
+    
+        .user-wrong-answer {
+          background-color: rgb(160, 43, 43);
+          padding: 4px;
+          display: none;
         }
 
         .next_question{
@@ -122,16 +120,6 @@ main {
 
           font-size: 1em;
         }
-      }
-    }
-
-    .correct_answer {
-      background-color: rgb(16, 83, 16);
-    }
-
-    .wrong_answer {
-      background-color: rgb(156, 23, 23);
-    }
   }
 }
   button {

@@ -5,8 +5,11 @@ import quizQuestions from "../data/quizQuestions";
 // Hitta elementet där frågorna ska visas
 const questionDiv = document.querySelector('#question') as HTMLElement;
 const resultDiv = document.querySelector('#result') as HTMLElement; // För resultatvisning
+const userCorrectAnswerDiv = document.querySelector('#user-correct-answer') as HTMLElement; // För direkt resultatvisning
+const userWrongAnswerDiv = document.querySelector('#user-wrong-answer') as HTMLElement; // För direkt resultatvisning
 let currentQuestionIndex = 0;
 let score = 0; // För att hålla koll på poäng
+
 
 // Funktion för att slumpa frågorna
 function shuffleQuestions() {
@@ -35,7 +38,7 @@ function showQuestion() {
     <div class="question">
       <p>${currentQuestion.question}</p>
       <div class="answer">
-        <form id="quiz-form">
+        <form id="quiz-form" class="quiz_form">
           <ul>
             ${currentQuestion.options.map(option =>
               `<li>
@@ -43,6 +46,8 @@ function showQuestion() {
                 <label for="option-${option}">${option}</label>
               </li>`).join('')}
           </ul>
+          <div id="user-correct-answer" class="user-correct-answer"></div>
+          <div id="user-wrong-answer" class="user-wrong-answer"></div>
           <button class="next_question" type="button" id="next-button">Nästa fråga</button>
         </form>
       </div>        
@@ -57,6 +62,10 @@ function showQuestion() {
 
 // Funktion för att kontrollera användarens svar
 function checkAnswer() {
+  const userCorrectAnswerDiv = document.querySelector('#user-correct-answer') as HTMLElement; // Hämta det dynamiska elementet
+  const userWrongAnswerDiv = document.querySelector('#user-wrong-answer') as HTMLElement; // Hämta det dynamiska elementet
+
+
   const selectedOption = document.querySelector('input[name="answer"]:checked') as HTMLInputElement;
 
   if (!selectedOption) {
@@ -75,15 +84,24 @@ function checkAnswer() {
   // Kolla om svaret är rätt
   if (selectedOption.value === currentQuestion.correctAnswer) {
     score++;
+    userCorrectAnswerDiv.style.display = 'block'; // Visa feedback
+    userCorrectAnswerDiv.innerHTML = `<p>Du svarade ${currentQuestion.correctAnswer} </br>Det är rätt svar!</p>`;
+    console.log('rätt', currentQuestion.correctAnswer);
+  }
+  else {
+    userWrongAnswerDiv.style.display = 'block'; // Visa feedback
+    userWrongAnswerDiv.innerHTML = `<p>Du svarade fel. </br>Rätt svar är ${currentQuestion.correctAnswer}</p>`;
   }
 
-  // Gå vidare till nästa fråga
+  // Gå vidare till nästa fråga efter att användaren fått se feedback i 5 sekunder
+  setTimeout(() => {
   currentQuestionIndex++;
   if (currentQuestionIndex < quizQuestions.length) {
     showQuestion();
   } else {
     showResultSlide(); // Visa resultatet
   }
+}, 2000);
 }
 
 // Funktion för att visa resultatet på en ny slide
