@@ -5,8 +5,6 @@ import quizQuestions from "../data/quizQuestions";
 // Hitta elementet där frågorna ska visas
 const questionDiv = document.querySelector('#question') as HTMLElement;
 const resultDiv = document.querySelector('#result') as HTMLElement; // För resultatvisning
-const userCorrectAnswerDiv = document.querySelector('#user-correct-answer') as HTMLElement; // För direkt resultatvisning
-const userWrongAnswerDiv = document.querySelector('#user-wrong-answer') as HTMLElement; // För direkt resultatvisning
 let currentQuestionIndex = 0;
 let score = 0; // För att hålla koll på poäng
 
