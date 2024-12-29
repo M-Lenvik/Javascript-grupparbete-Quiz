@@ -5,12 +5,15 @@ import quizQuestions from "../data/quizQuestions";
 // Hitta elementet där frågorna ska visas
 const questionDiv = document.querySelector('#question') as HTMLElement;
 const resultDiv = document.querySelector('#result') as HTMLElement; // För resultatvisning
-let currentQuestionIndex = 0;
+let currentQuestionIndex: number;
 let score = 0; // För att hålla koll på poäng
-
+let run = 1;  //spelomgång
+let QuestionIndexSelector: number; //För att skriva ut 10 frågor i taget
 
 // Funktion för att slumpa frågorna
 function shuffleQuestions() {
+  currentQuestionIndex = 0; //nollställer variablerna när man slumpar frågorna
+  QuestionIndexSelector  = 10;
   for (let i = quizQuestions.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [quizQuestions[i], quizQuestions[j]] = [quizQuestions[j], quizQuestions[i]];
@@ -29,9 +32,7 @@ function showQuestion() {
     console.error("Försöker visa en fråga utanför quizQuestions-arrayens gränser.");
     return;
   }
-
   const currentQuestion = quizQuestions[currentQuestionIndex];
-
   questionDiv.innerHTML = `
     <div class="question">
       <p>${currentQuestion.question}</p>
@@ -94,9 +95,10 @@ function checkAnswer() {
   // Gå vidare till nästa fråga efter att användaren fått se feedback i 5 sekunder
   setTimeout(() => {
   currentQuestionIndex++;
-  if (currentQuestionIndex < quizQuestions.length) {
+  if (currentQuestionIndex < QuestionIndexSelector) { 
     showQuestion();
   } else {
+    clearInterval(startcount);
     showResultSlide(); // Visa resultatet
   }
 }, 2000);
@@ -108,14 +110,14 @@ function showResultSlide() {
     console.error('resultDiv eller questionDiv hittades inte!');
     return;
   }
-
+  
   questionDiv.style.display = 'none'; // Dölj frågorna
   resultDiv.style.display = 'block'; // Visa resultatet
 
   resultDiv.innerHTML = `
     <div class="result-slide">
       <h2>Quiz Resultat</h2>
-      <p>Du fick ${score} av ${quizQuestions.length} rätt!</p>
+      <p>Du fick ${score} av 10 rätt!</p>
       <p>Det tog ${minute} minuter och ${second} sekunder.</p>
       <button id="restart-button">Gör om quizet</button>
     </div>
@@ -129,10 +131,17 @@ function showResultSlide() {
 
 // Funktion för att göra om quizet
 function restartQuiz() {
-  currentQuestionIndex = 0;
+  if (run == quizQuestions.length/10){ //om man har spelat genom frågorna återställs allt för en ny spelomgång
+    currentQuestionIndex = 0;
+    shuffleQuestions();
+    run = 1;
+  }
+  else if (run < quizQuestions.length/10){ 
+    run ++;
+    QuestionIndexSelector += 10;
+  }
   score = 0;
   timerStart();
-  shuffleQuestions();
   questionDiv.style.display = 'block'; // Visa frågorna igen
   resultDiv.style.display = 'none'; // Dölj resultatet
   showQuestion();
@@ -164,15 +173,10 @@ function timerStart(){ //sätter tiderna till 0 varje gång man callar på funkt
 
 function timer(){
   counter++;
-  second = Math.floor(counter % 60);
+  second = Math.floor(counter % 60); //ändrar om räkningvariablen till sekunder och minuter
   minute = Math.floor(counter / 60);
-  const minutes = String(minute).padStart(2, '0');
+  const minutes = String(minute).padStart(2, '0'); //lägger till 0'a i slutet av timern
   const seconds = String(Math.floor(counter % 60)).padStart(2, '0');
-  timerdiv.innerHTML = `${minutes}:${seconds}`; 
-  console.log(minutes, seconds);
-
-  if (currentQuestionIndex >= quizQuestions.length){
-    clearInterval(startcount);
-  }
+  timerdiv.innerHTML = `${minutes}:${seconds}`; //utskrift
 }
 timerStart();
