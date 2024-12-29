@@ -116,7 +116,7 @@ function showResultSlide() {
     <div class="result-slide">
       <h2>Quiz Resultat</h2>
       <p>Du fick ${score} av ${quizQuestions.length} rätt!</p>
-      <p>Det tog ${time.minute} minuter och ${time.seconds} sekunder.</p>
+      <p>Det tog ${minute} minuter och ${second} sekunder.</p>
       <button id="restart-button">Gör om quizet</button>
     </div>
   `;
@@ -131,7 +131,7 @@ function showResultSlide() {
 function restartQuiz() {
   currentQuestionIndex = 0;
   score = 0;
-  newtimer();
+  timerStart();
   shuffleQuestions();
   questionDiv.style.display = 'block'; // Visa frågorna igen
   resultDiv.style.display = 'none'; // Dölj resultatet
@@ -149,44 +149,30 @@ showQuestion();
 //------------------------------------
 
 const timerdiv = document.querySelector("#timer") as HTMLElement;
-class timerVar {
-  constructor(
-    public seconds: number,
-    public counter: number,
-    public minute: number
-  ) {
-    this.seconds = seconds;
-    this.counter = counter;
-    this.minute = minute;
+let startcount: any;
+let second: number;
+let counter: number;
+let minute: number;
+
+function timerStart(){ //sätter tiderna till 0 varje gång man callar på funktionen för att återställa siffrorna
+    counter = 0;
+    second = 0;
+    minute = 0;
+    startcount = setInterval(timer, 1000);//Använd clearInterval(startcount) när du vill stanna timern, man callar funktionen som vanligt
+
+} 
+
+function timer(){
+  counter++;
+  second = Math.floor(counter % 60);
+  minute = Math.floor(counter / 60);
+  const minutes = String(minute).padStart(2, '0');
+  const seconds = String(Math.floor(counter % 60)).padStart(2, '0');
+  timerdiv.innerHTML = `${minutes}:${seconds}`; 
+  console.log(minutes, seconds);
+
+  if (currentQuestionIndex >= quizQuestions.length){
+    clearInterval(startcount);
   }
 }
-
-let time = new timerVar(0, 0, 0);
-
-function newtimer() { // Återställ timer
-  time.counter = 0;
-  time.seconds = 0;
-  time.minute = 0;
-
-  const startcount = setInterval(() => {
-    time.counter++;
-    time.minute = Math.floor(time.counter / 60);
-    time.seconds = Math.floor(time.counter % 60);
-
-    if (time.minute < 10 && time.seconds < 10) {
-      timerdiv.innerHTML = `0${time.minute}:0${time.seconds}`;
-    } else if (time.minute < 10 && time.seconds >= 10) {
-      timerdiv.innerHTML = `0${time.minute}:${time.seconds}`;
-    } else if (time.seconds < 10) {
-      timerdiv.innerHTML = `${time.minute}:0${time.seconds}`;
-    } else {
-      timerdiv.innerHTML = `${time.minute}:${time.seconds}`;
-    }
-
-    if (currentQuestionIndex >= quizQuestions.length) {
-      clearInterval(startcount);
-    }
-  }, 1000);
-}
-
-newtimer();
+timerStart();
