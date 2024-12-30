@@ -35,7 +35,7 @@ function showQuestion() {
   const currentQuestion = quizQuestions[currentQuestionIndex];
   questionDiv.innerHTML = `
     <div class="question">
-      <p><strong>Fråga ${currentQuestionIndex + 1} av ${quizQuestions.length}</strong></p> <!-- Frågenummer -->
+      <p><strong>Fråga ${currentQuestionIndex + 1} av 10</strong></p> <!-- Frågenummer -->
       <p>${currentQuestion.question}</p>
       <div class="answer">
         <form id="quiz-form" class="quiz_form">
