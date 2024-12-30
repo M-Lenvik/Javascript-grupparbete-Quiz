@@ -16,19 +16,20 @@
     </header>
 
     <main>
-      <div id="timer"></div>
 
-      <section class="questions">
-        <div id="question">
-          <!-- Frågorna kommer att laddas här från TypeScript -->
-        </div>
-        <div id="result" style="display: none;"></div>
-
+      <section id="start-screen" class="start-screen">
+        <h2>Välkommen till Blå Kongo Quiz!</h2>
+        <button id="start-button">Starta Quiz</button>
       </section>
 
-      <div id="restart-container"></div>
-
-   
+      <section id="quiz-section" style="display: none;">
+        <div id="timer"></div>
+        <div class="questions">
+          <div id="question"></div>
+          <div id="result" style="display: none;"></div>
+        </div>
+        <div id="restart-container"></div>
+      </section>
 
     </main>
 

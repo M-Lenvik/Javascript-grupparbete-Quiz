@@ -35,6 +35,7 @@ function showQuestion() {
   const currentQuestion = quizQuestions[currentQuestionIndex];
   questionDiv.innerHTML = `
     <div class="question">
+      <p><strong>Fråga ${currentQuestionIndex + 1} av ${quizQuestions.length}</strong></p> <!-- Frågenummer -->
       <p>${currentQuestion.question}</p>
       <div class="answer">
         <form id="quiz-form" class="quiz_form">
@@ -179,4 +180,18 @@ function timer(){
   const seconds = String(Math.floor(counter % 60)).padStart(2, '0');
   timerdiv.innerHTML = `${minutes}:${seconds}`; //utskrift
 }
-timerStart();
+
+// Starta quiz knapp 
+
+const startScreen = document.querySelector('#start-screen') as HTMLElement;
+const quizSection = document.querySelector('#quiz-section') as HTMLElement;
+const startButton = document.querySelector('#start-button') as HTMLButtonElement;
+
+// Starta quiz när användaren klickar på "Starta Quiz"
+startButton.addEventListener('click', () => {
+  startScreen.style.display = 'none'; 
+  quizSection.style.display = 'block'; 
+  timerStart(); 
+  showQuestion(); 
+});
+
