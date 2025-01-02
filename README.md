@@ -18,3 +18,6 @@
 ### Sprintplanering 27/12/2024
 
 ![image](https://github.com/user-attachments/assets/cf3e7419-1e0a-4a6a-ab1b-4a238413bd92)
+
+### Sprintplanering 2/01/2025
+![Skärmbild 2025-01-02 183048](https://github.com/user-attachments/assets/f5cbd6af-c43d-4b45-b699-f345fe43ef47)
