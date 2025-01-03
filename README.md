@@ -1,4 +1,5 @@
 ### Wireframe 16/12/2024 ?
+
 ![Skärmbild 2024-12-19 193236](https://github.com/user-attachments/assets/9cd8483c-7804-4f82-974b-c8b9920786a2)
 
 ### Sprintplanering 17/12/2024
@@ -20,6 +21,7 @@
 ![image](https://github.com/user-attachments/assets/cf3e7419-1e0a-4a6a-ab1b-4a238413bd92)
 
 ### Sprintplanering 2/01/2025
+
 ![Skärmbild 2025-01-02 183048](https://github.com/user-attachments/assets/f5cbd6af-c43d-4b45-b699-f345fe43ef47)
 
 ### Sprintplanering 3/01/2025
