@@ -1,4 +1,4 @@
-@import './_normalize.scss';
+@use './_normalize.scss';
 
 @function rem($size) {
   @return calc($size / 16) * 1rem;
