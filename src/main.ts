@@ -1,4 +1,3 @@
-import './_normalize.scss';
 import './style.scss';
 import quizQuestions from "../data/quizQuestions";
 

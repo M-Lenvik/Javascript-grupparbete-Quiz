@@ -1,10 +1,10 @@
-export interface Question {
+export interface IQuestion {
     question: string;
     options: string[];
     correctAnswer: string;
 }
 
-export const quizQuestions: Question[] = [
+export const quizQuestions: IQuestion[] = [
     {
         question: "Vilken svensk regissör är känd för filmer som 'Fanny och Alexander' och 'Det sjunde inseglet'?",
         options: [
