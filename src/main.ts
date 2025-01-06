@@ -137,8 +137,8 @@ function restartQuiz() {
     run = 1;
   }
   else if (run < quizQuestions.length/10){ 
-    run ++;
-    QuestionIndexSelector += 10;
+    currentQuestionIndex = run * 10;
+    run++;
   }
   score = 0;
   timerStart();
