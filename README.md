@@ -33,3 +33,8 @@
 
 ![Quiz 2](https://github.com/user-attachments/assets/d789b7d3-f872-415a-8b69-cc3e3c80a543)
 
+### Sprintplanering 7/01/2025
+
+![image](https://github.com/user-attachments/assets/e777c60b-442f-4de7-ad63-8d6cb2907679)
+
+
