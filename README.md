@@ -26,3 +26,10 @@
 
 ### Sprintplanering 3/01/2025
 ![Skärmbild 2025-01-03 175752](https://github.com/user-attachments/assets/10299a57-ba01-4e50-a19f-3496c7f33339)
+
+### Tidig version
+
+![Quiz 1 ](https://github.com/user-attachments/assets/8889e42a-000d-477e-83c9-b23f4807eb2c)
+
+![Quiz 2](https://github.com/user-attachments/assets/d789b7d3-f872-415a-8b69-cc3e3c80a543)
+
