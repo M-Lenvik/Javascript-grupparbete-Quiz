@@ -189,6 +189,7 @@ footer {
     width: 96px;
     height: 96px;
     object-fit: contain;
+    margin: auto;
   }
 
   .pict_1 {
@@ -237,4 +238,16 @@ p {
 #start-button:hover {
   background-color: #3b444f; 
   transform: translateY(-2px); 
+}
+
+#result{
+  text-align: center;          
+  padding: 20px;
+  background-color: #eceff4;   
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden{
+  display: none;
 }
