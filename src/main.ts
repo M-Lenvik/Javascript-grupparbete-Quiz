@@ -122,8 +122,8 @@ function showResultSlide() {
 function restartQuiz() {
   if (run >= quizQuestions.length / 10) {
     run = 1;
-    shuffleQuestions();
-  } else {
+  } 
+  else {
     run++;
   }
 
