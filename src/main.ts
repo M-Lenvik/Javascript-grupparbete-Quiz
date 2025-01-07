@@ -33,6 +33,7 @@ function showQuestion() {
   }
 
   const currentQuestion = quizQuestions[currentQuestionIndex];
+  resultDiv.style.display = 'none';
   questionDiv.innerHTML = `
     <div class="question">
       <p><strong>Fråga ${(currentQuestionIndex % 10) + 1} av 10</strong></p> <!-- Frågenummer -->
