@@ -66,10 +66,16 @@ function checkAnswer() {
   const userCorrectAnswerDiv = document.querySelector('#user-correct-answer') as HTMLElement;
   const userWrongAnswerDiv = document.querySelector('#user-wrong-answer') as HTMLElement;
   const selectedOption = document.querySelector('input[name="answer"]:checked') as HTMLInputElement;
+  const nextButton = document.getElementById('next-button') as HTMLButtonElement;
 
   if (!selectedOption) {
     alert("Vänligen välj ett svar innan du går vidare!");
     return;
+  }
+
+  // Göm knappen när den tryckts på
+  if (nextButton) {
+    nextButton.style.display = 'none';
   }
 
   const currentQuestion = quizQuestions[currentQuestionIndex];
@@ -83,7 +89,11 @@ function checkAnswer() {
     userWrongAnswerDiv.innerHTML = `<p>Du svarade fel. </br>Rätt svar är ${currentQuestion.correctAnswer}</p>`;
   }
 
+  
   setTimeout(() => {
+    if (nextButton) {
+      nextButton.style.display = 'block';
+    }
     currentQuestionIndex++;
     if (currentQuestionIndex < QuestionIndexSelector) {
       showQuestion();
