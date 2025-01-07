@@ -38,7 +38,7 @@ function showQuestion() {
       <p><strong>Fråga ${(currentQuestionIndex % 10) + 1} av 10</strong></p> <!-- Frågenummer -->
       <p>${currentQuestion.question}</p>
       <div class="answer">
-        <form id="quiz-form" class="quiz_form">
+        <form id="quiz-form" class="quiz-form">
           <ul>
             ${currentQuestion.options.map(option =>
               `<li>
@@ -48,7 +48,7 @@ function showQuestion() {
           </ul>
           <div id="user-correct-answer" class="user-correct-answer"></div>
           <div id="user-wrong-answer" class="user-wrong-answer"></div>
-          <button class="next_question" type="button" id="next-button">Nästa fråga</button>
+          <button class="next-question" type="button" id="next-button">Nästa fråga</button>
         </form>
       </div>        
     </div>
