@@ -37,4 +37,12 @@
 
 ![image](https://github.com/user-attachments/assets/e777c60b-442f-4de7-ad63-8d6cb2907679)
 
+### Sprintplanering 8/01/2025
+
+Ingen förändring sedan igår
+
+### HTML validering 8/01/2025
+
+![validator w3 org_nu](https://github.com/user-attachments/assets/1906be84-2eb6-43a3-b4c8-a24c8a86d677)
+
 
