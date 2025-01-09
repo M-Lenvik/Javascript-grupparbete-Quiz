@@ -45,3 +45,7 @@ Ingen förändring sedan igår
 ### HTML validering 8/01/2025
 
 ![validator w3 org_nu](https://github.com/user-attachments/assets/1906be84-2eb6-43a3-b4c8-a24c8a86d677)
+
+### Sprintplanering 9/01/2025
+
+![Skärmbild 2025-01-09 183816](https://github.com/user-attachments/assets/1ca9e5d4-4355-41b5-8f68-e2c1958c327d)
