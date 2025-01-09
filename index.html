@@ -1,67 +1,48 @@
 <!doctype html>
 <html lang="sv">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Denna quiz är en del av Ephraim, Marie, Ridwaan och Davids grupparbete. Här kommer besökarna få svara på frågor inom kategorin film."
-        />
-        <meta name="keywords" content="quiz, filmquiz, film" />
-        <meta name="author" content="Blå Kongo Team" />
-        <title>Blå Kongo quiz</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Denna quiz är en del av Ephraim, Marie, Ridwaan och Davids grupparbete. Här kommer besökarna få svara på frågor inom kategorin film." />
+    <meta name="keywords" content="quiz, filmquiz, film" />
+    <meta name="author" content="Blå Kongo Team" />
+    <title>Blå Kongo quiz</title>
+  </head>
+  <body>
+    <header>
+      <h1>Blå kongos film quiz</h1>
+      <p>Hejsan och välkommen till vår quiz! Här får du testa dina kunskaper inom film, lycka till!</p>
+    </header>
 
-    <body>
-        <header>
-            <h1>Blå kongos filmquiz</h1>
-            <p>
-                Hejsan och välkommen till vår quiz! Här får du testa dina
-                kunskaper inom film, lycka till!
-            </p>
-        </header>
+    <main>
 
-        <main>
-            <section id="start-screen" class="start-screen">
-                <h2>Välkommen till Blå Kongo Quiz!</h2>
-                <button id="start-button" class="start-button">
-                    Starta Quiz
-                </button>
-            </section>
+      <section id="start-screen" class="start-screen">
+        <h2>Välkommen till Blå Kongo Quiz!</h2>
+        <button id="start-button" class="start-button">Starta Quiz</button>
+      </section>
 
-            <div id="quiz-section" class="hidden">
-                <div id="timer" class="timer"></div>
-                <div class="questions">
-                    <div id="question"></div>
-                    <div id="result" class="result hidden"></div>
-                </div>
-                <div id="restart-container"></div>
-            </div>
-        </main>
+      <section id="quiz-section" class="hidden">
+        <div id="timer" class="timer">00:00</div>
+        <div class="questions">
+          <div id="question"></div>
+          <div id="result" class="result" class="hidden"></div>
+        </div>
+        <div id="restart-container"></div>
+      </section>
+      
+    </main>
 
-        <footer>
-            <div class="pict-1">
-                <img
-                    src="pictures/movie.png"
-                    width="96"
-                    height="96"
-                    alt="Film Icon"
-                    loading="lazy"
-                />
-            </div>
-            <div class="pict-2">
-                <img
-                    src="pictures/movie.png"
-                    width="96"
-                    height="96"
-                    alt="Film Icon"
-                    loading="lazy"
-                />
-            </div>
-        </footer>
+    <footer>
+      <div class="pict-1">
+        <img src="pictures/movie.png" width="96" height="96" alt="Film Icon" loading="lazy" />
+      </div>
+      <div class="pict-2">
+        <img src="pictures/movie.png" width="96" height="96" alt="Film Icon" loading="lazy" />
+      </div>
+    </footer>
 
-        <!-- Din TypeScript-fil som kompileras till JavaScript via Vite -->
-        <script type="module" src="/src/main.ts"></script>
-    </body>
+    <!-- Din TypeScript-fil som kompileras till JavaScript via Vite -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
