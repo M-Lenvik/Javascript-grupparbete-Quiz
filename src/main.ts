@@ -1,6 +1,6 @@
-import './style.scss';
-import quizQuestions from "../data/quizQuestions";
-import './_mobile.scss';
+import './style.scss'
+import quizQuestions from '../data/quizQuestions'
+import './_mobile.scss'
 
 // Hitta elementet där frågorna ska visas
 const questionDiv = document.querySelector('#question') as HTMLElement
