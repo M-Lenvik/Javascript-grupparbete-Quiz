@@ -1,5 +1,6 @@
 import './style.scss';
 import quizQuestions from "../data/quizQuestions";
+import './_mobile.scss';
 
 // Hitta elementet där frågorna ska visas
 const questionDiv = document.querySelector('#question') as HTMLElement;
@@ -119,7 +120,7 @@ function showResultSlide() {
       <h2>Quiz Resultat</h2>
       <p>Du fick ${score} av 10 rätt!</p>
       <p>Det tog ${minute} minuter och ${second} sekunder.</p>
-      <button id="restart-button">Gör om quizet</button>
+      <button id="restart-button" class="restart-button">Gör om quizet</button>
     </div>
   `;
 
