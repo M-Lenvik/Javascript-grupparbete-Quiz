@@ -25,6 +25,7 @@
 ![Skärmbild 2025-01-02 183048](https://github.com/user-attachments/assets/f5cbd6af-c43d-4b45-b699-f345fe43ef47)
 
 ### Sprintplanering 3/01/2025
+
 ![Skärmbild 2025-01-03 175752](https://github.com/user-attachments/assets/10299a57-ba01-4e50-a19f-3496c7f33339)
 
 ### Tidig version
@@ -44,5 +45,3 @@ Ingen förändring sedan igår
 ### HTML validering 8/01/2025
 
 ![validator w3 org_nu](https://github.com/user-attachments/assets/1906be84-2eb6-43a3-b4c8-a24c8a86d677)
-
-
