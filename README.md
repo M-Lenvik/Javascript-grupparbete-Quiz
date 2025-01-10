@@ -49,3 +49,7 @@ Ingen förändring sedan igår
 ### Sprintplanering 9/01/2025
 
 ![Skärmbild 2025-01-09 183816](https://github.com/user-attachments/assets/1ca9e5d4-4355-41b5-8f68-e2c1958c327d)
+
+### Retro
+![image](https://github.com/user-attachments/assets/fc73ad1e-c601-4f07-bedd-b972981e4d8e)
+
