@@ -1,3 +1,10 @@
+## Kolla node version: 
+node -v
+```
+npm install
+```
+
+
 ### Wireframe 16/12/2024 ?
 
 ![Skärmbild 2024-12-19 193236](https://github.com/user-attachments/assets/9cd8483c-7804-4f82-974b-c8b9920786a2)
