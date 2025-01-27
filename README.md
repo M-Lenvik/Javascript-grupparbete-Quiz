@@ -1,19 +1,53 @@
-## Kolla node version: 
-node -v
+# Kurs: Javascript & Agilt projektarbete
+
+## Beskrivning av sidan
+<p>Detta är ett Quiz med filmfrågor som skapats i grupp.</p>
+
+## Innehållsförteckning
+1. [Uppgift: Skapa ett quiz genom att följa SCRUM metoden](#uppgift-skapa-ett-quiz-genom-att-följa-scrum-metoden)
+2. [Demo](#demo)
+3. [Kom igång med projektet](#kom-igång-med-projektet)
+4. [Tekniker som använts](#tekniker-som-använts)
+5. [Projektets arbetshistorik](#projektets-arbetshistorik)
+
+## Uppgift: Skapa ett quiz genom att följa SCRUM metoden
+<p>Programmeringsuppgiften var att skapa ett quiz, men det skulle göras genom ett agilt projektarbete där vi lärde oss och följde SCRUM metoden. Varje dag hade gruppen som bestod av fyra medlemmar daily standups och vi genomförde ett retro. Anledningen till att det bara var ett retro är att kursen var kort - bara tre veckor. Längst ner finns screenshots på de uppgifter som vi skapade i projektet och man kan följa hur vårt projekt utvecklades över tid.</p>
+
+## Demo
+<img width="463" alt="image" src="https://github.com/user-attachments/assets/cabf981d-d20a-4780-b019-06d7fa622c16" /> <br>
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/67d351df-fd8d-446e-93f2-812b0fa186fa" /> <br>
+<img width="469" alt="image" src="https://github.com/user-attachments/assets/e7d3d9df-39b0-4f8e-9a6d-c5d791bc5a83" />
+
+
+## Kom igång med projektet
+**Installera genom följande:** 
 ```
 npm install
 ```
+```
+npm run dev
+```
 
+## Tekniker som använts
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-### Wireframe 16/12/2024 ?
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+![Prettier](https://img.shields.io/badge/prettier-%23F7B93E.svg?style=for-the-badge&logo=prettier&logoColor=black)
+
+##
+# Projektets arbetshistorik
+### Wireframe 16/12/2024
 
 ![Skärmbild 2024-12-19 193236](https://github.com/user-attachments/assets/9cd8483c-7804-4f82-974b-c8b9920786a2)
 
 ### Sprintplanering 17/12/2024
 
 <img width="1792" alt="Sprint planning 17 dec" src="/src/assets/sprintplanning1.png">
-
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/9ew2LI-M)
 
 ### Sprintplanering 19/12/2024
 
@@ -34,12 +68,6 @@ npm install
 ### Sprintplanering 3/01/2025
 
 ![Skärmbild 2025-01-03 175752](https://github.com/user-attachments/assets/10299a57-ba01-4e50-a19f-3496c7f33339)
-
-### Tidig version
-
-![Quiz 1 ](https://github.com/user-attachments/assets/8889e42a-000d-477e-83c9-b23f4807eb2c)
-
-![Quiz 2](https://github.com/user-attachments/assets/d789b7d3-f872-415a-8b69-cc3e3c80a543)
 
 ### Sprintplanering 7/01/2025
 
