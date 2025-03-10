@@ -11,7 +11,9 @@ https://github.com/M-Lenvik
 4. [Uppgift: Skapa ett quiz genom att följa SCRUM metoden](#uppgift-skapa-ett-quiz-genom-att-följa-scrum-metoden)
    1. [Uppgiftsbeskrivning](#uppgiftsbeskrivning)
    2. [För G i JavaScript kursen](#för-g-i-javascript-kursen)
-   3. [För G i Agila kursen](#för-g-i-agila-kursen)
+   3. [Slutbetyg i Javascipt](#slutbetyg-i-javascript)
+   4. [För G i Agilt projektarbete](#för-g-i-agilt-projektarbete)
+   5. [Slutbetyg i Agilt projektarbete](#slutbetyg-i-agilt-projektarbete)
 5. [Projektets arbetshistorik](#projektets-arbetshistorik)
    1. [Wireframe](#wireframe)
    2. [Sprintplanering](#sprintplanering)
@@ -81,8 +83,11 @@ Koden är skriven i TypeScript.
 Ni har skrivit minst 1 interface.
 Ni har använt minst 1 modul-fil (t.ex. lagt frågorna i en separat fil).
 
+## Slutbetyg i Javascript
+![Betyg Javascript grupparbete quiz](https://github.com/user-attachments/assets/2da52457-01cc-4278-91ce-c0e3ed025c0c)
 
-### För G i Agila kursen
+
+### För G i Agilt projektarbete
 Ni ska ha gjort minst två sprint-planeringar inkl. estimat (story points) i GitHub eller Trello och dokumenterat dessa i ert repo.
 Ni har valt en scrum master (dokumentera vem).
 Ni ska ha daily standups varje arbetsdag (ej helg) och dokumenterat dessa i ert repo. Ta gärna en skärmdump på er board varje dag och klistra in i dokumentationen så att jag kan se hur den utvecklas. Använd co-authoring-funktionen på GitHub om ni gör en gemensam commit.
@@ -90,7 +95,9 @@ Ni ska efter avslutad sprint hålla retros och dokumentera dessa i ert repo.
 Ni ska ha deltagit i att presentera för produktägare
 Ni ska ha deltagit i avslutande presentation
 
-##
+## Slutbetyg i Agilt projektarbete
+![Betyg Agilt projektarbete grupparbete loggbok](https://github.com/user-attachments/assets/b68705bd-2e57-4bc5-badb-2bf8e22ea4fe)
+
 ## Projektets arbetshistorik
 ### Wireframe 
 **16/12/2024**
