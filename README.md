@@ -1,8 +1,14 @@
 # Kurs: Javascript & Agilt projektarbete
+## Utbildning till Frontend developer på Medieinstitutet
 Detta är det första grupparbetet jag gjort på Medieinstitutet. Se uppgiftsbeskrivning nedan.
 
 Skapad i grupp med mig, **Marie Lenvik** <br>
 https://github.com/M-Lenvik
+Gruppen bestod av:
+- [Marie Lenvik](https://github.com/M-Lenvik)
+- [David Brunni](https://github.com/DavidBrunni)
+- [Ephraim Axelsson](https://github.com/EphraimAxelsson)
+- [Ridwaan Mohamed](https://github.com/RidwaanM)
 
 ## Innehållsförteckning
 1. [Beskrivning av sidan](#beskrivning-av-sidan)
@@ -55,45 +61,45 @@ npm run dev
 <p>Programmeringsuppgiften var att skapa ett quiz, men det skulle göras genom ett agilt projektarbete där vi lärde oss och följde SCRUM metoden. Varje dag hade gruppen som bestod av fyra medlemmar daily standups och vi genomförde ett retro. Anledningen till att det bara var ett retro är att kursen var kort - bara tre veckor. Längst ner finns screenshots på de uppgifter som vi skapade i projektet och man kan följa hur vårt projekt utvecklades över tid.</p>
 
 
-
 ### Uppgiftsbeskrivning
-Ni får betyg i den kursen baserat på er arbetsprocess i denna uppgift.
-Dokumentera den agila processen i gruppen i repot
-Koda ett quiz i TypeScript genom att använda agila arbetsmetoder (scrum)
-Quizet ska innehålla minst 20 frågor
-Varje fråga ska ha 3 svarsalternativ och endast 1 svarsalternativ ska vara korrekt
-Frågorna ska presenteras i slumpmässig ordning, och du ska visa 10 frågor per spelomgång
-Om användaren väljer att spela igen, så ska inte samma 10 frågor komma upp på nytt
-Du ska få poäng för rätt svar
-Det ska bara visas en fråga åt gången på skärmen
-Det ska finnas en tidräkning (uppåt). Tidräkningen ska stanna när alla frågor har besvarats.
+Ni får betyg i den kursen baserat på er arbetsprocess i denna uppgift.<br>
+Dokumentera den agila processen i gruppen i repot<br>
+Koda ett quiz i TypeScript genom att använda agila arbetsmetoder (scrum)<br>
+Quizet ska innehålla minst 20 frågor<br>
+Varje fråga ska ha 3 svarsalternativ och endast 1 svarsalternativ ska vara korrekt<br>
+Frågorna ska presenteras i slumpmässig ordning, och du ska visa 10 frågor per spelomgång<br>
+Om användaren väljer att spela igen, så ska inte samma 10 frågor komma upp på nytt<br>
+Du ska få poäng för rätt svar<br>
+Det ska bara visas en fråga åt gången på skärmen<br>
+Det ska finnas en tidräkning (uppåt). Tidräkningen ska stanna när alla frågor har besvarats.<br>
 Det ska visas en bekräftelseruta som visar hur många frågor spelaren svarade rätt på (av totalt antal frågor), och hur lång tid det tog.
 
 
 ### För G i JavaScript kursen
-Varje person ska ha gjort minst två pull requests.
-Koden är korrekt formaterad.
-Koden innehåller enstaka buggar, men fungerar på det stora hela.
-Ni har gjort åtminstone en mobilversion; om ni återanvänder samma layout i tablet/desktop så går det bra.
-Sidan ska vara någorlunda snygg (CSS).
-Sidan är tillgänglighetsgranskad.
-Sidan (HTML-koden) är validerad.
-Ni har gjort en Lighthouse-analys på live-sidan.
-Koden är skriven i TypeScript.
-Ni har skrivit minst 1 interface.
-Ni har använt minst 1 modul-fil (t.ex. lagt frågorna i en separat fil).
+Varje person ska ha gjort minst två pull requests.<br>
+Koden är korrekt formaterad.<br>
+Koden innehåller enstaka buggar, men fungerar på det stora hela.<br>
+Ni har gjort åtminstone en mobilversion; om ni återanvänder samma layout i tablet/desktop så går det bra.<br>
+Sidan ska vara någorlunda snygg (CSS).<br>
+Sidan är tillgänglighetsgranskad.<br>
+Sidan (HTML-koden) är validerad.<br>
+Ni har gjort en Lighthouse-analys på live-sidan.<br>
+Koden är skriven i TypeScript.<br>
+Ni har skrivit minst 1 interface.<br>
+Ni har använt minst 1 modul-fil (t.ex. lagt frågorna i en separat fil).<br>
 
 ## Slutbetyg i Javascript
-![Betyg Javascript grupparbete quiz](https://github.com/user-attachments/assets/2da52457-01cc-4278-91ce-c0e3ed025c0c)
+![Betyg Javascript grupparbete quiz](https://github.com/user-attachments/assets/d8f68b1a-4653-40f2-8e9e-11572d5207c8)
+
 
 
 ### För G i Agilt projektarbete
-Ni ska ha gjort minst två sprint-planeringar inkl. estimat (story points) i GitHub eller Trello och dokumenterat dessa i ert repo.
-Ni har valt en scrum master (dokumentera vem).
-Ni ska ha daily standups varje arbetsdag (ej helg) och dokumenterat dessa i ert repo. Ta gärna en skärmdump på er board varje dag och klistra in i dokumentationen så att jag kan se hur den utvecklas. Använd co-authoring-funktionen på GitHub om ni gör en gemensam commit.
-Ni ska efter avslutad sprint hålla retros och dokumentera dessa i ert repo.
-Ni ska ha deltagit i att presentera för produktägare
-Ni ska ha deltagit i avslutande presentation
+Ni ska ha gjort minst två sprint-planeringar inkl. estimat (story points) i GitHub eller Trello och dokumenterat dessa i ert repo.<br>
+Ni har valt en scrum master (dokumentera vem).<br>
+Ni ska ha daily standups varje arbetsdag (ej helg) och dokumenterat dessa i ert repo. Ta gärna en skärmdump på er board varje dag och klistra in i dokumentationen så att jag kan se hur den utvecklas. Använd co-authoring-funktionen på GitHub om ni gör en gemensam commit.<br>
+Ni ska efter avslutad sprint hålla retros och dokumentera dessa i ert repo.<br>
+Ni ska ha deltagit i att presentera för produktägare<br>
+Ni ska ha deltagit i avslutande presentation<br>
 
 ## Slutbetyg i Agilt projektarbete
 ![Betyg Agilt projektarbete grupparbete loggbok](https://github.com/user-attachments/assets/b68705bd-2e57-4bc5-badb-2bf8e22ea4fe)
